@@ -7,6 +7,7 @@ a finger on a button to manually add the score for each of the players. The code
 The question is how would I translate the score onto the user interface spectators watching at home? 
 What if I expanded this project into a machine learning project where the project learns the game of 
 badminton and keeps track of the score. This already sounds complicated...
+What if i take it one step further and analyze player mistakes??
 
 Some of the challenges
    - Understanding when a call is challenged and provide the correct result
@@ -26,3 +27,8 @@ Ideas to start
 6. Implement unit and integration testing
 7. Use it / QA testing?!?!
 8. Repeat steps 5-7 until production ready
+
+Tech Stack
+Python - tensorflow??
+postgresql
+nodejs
