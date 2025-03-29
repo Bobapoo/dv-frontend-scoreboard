@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     './index.html',
-    './src/**/*.{js,jsx,ts,tsx}', // Include your JSX/TSX files
+    './src/**/*.{html,js,jsx,ts,tsx}', // Include your JSX/TSX files
   ],
   theme: {
     extend: {

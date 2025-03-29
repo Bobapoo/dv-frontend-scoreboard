@@ -1,0 +1,132 @@
+/* General scoreboard container */
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-background-light);
+  color: var(--color-text-dark);
+  padding: var(--spacing-large);
+  border-radius: var(--border-radius);
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.scoreboard.dark {
+  background-color: var(--color-background-dark);
+  color: var(--color-text-light);
+}
+
+.title { 
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: var(--spacing-large);
+  margin-top: var(--spacing-small);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--spacing-large); /* Space between title and scoreboard */
+}
+
+.teams {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: var(--spacing-medium);
+}
+
+.teams > * {
+  margin-bottom: var(--spacing-medium); /* Add space between team rows */
+}
+
+.toggleButton,
+.resetButton {
+  padding: var(--spacing-small) var(--spacing-medium);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size-small);
+  margin-bottom: var(--spacing-medium);
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  border: none;
+}
+
+.toggleButton {
+  background-color: var(--color-info); /* Light blue for Toggle */
+}
+
+
+.resetButton {
+  background-color: var(--color-warning); /* Amber for warning */
+}
+
+/* Hover Effects */
+.toggleButton:hover,
+.resetButton:hover {
+  background-color: var(--color-hover-light); /* Light hover effect */
+  color: var(--color-text-dark);
+}
+
+/* Dark Mode Reset Button */
+[data-theme="dark"] .resetButton {
+  background-color: var(--color-purple); /* Purple for reset */
+  color: var(--color-text-light);
+}
+
+[data-theme="dark"] .resetButton:hover {
+  background-color: #FF7F50; /* Lighter orange hover */
+  color: var(--color-text-light);
+}
+
+/* Dark Mode Toggle Button */
+[data-theme="dark"] .toggleButton {
+  background-color: var(--color-light-blue-indigo);
+  color: var(--color-text-light);
+}
+
+[data-theme="dark"] .toggleButton:hover {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+}
+
+.trophyIcon {
+  margin-right: 8px;
+  font-size: 2rem;
+  color: var(--color-secondary);  /* Gold color for the trophy */
+}
+
+.teamNames {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-large);
+}
+
+.teamNameInput {
+  padding: var(--spacing-small);
+  font-size: var(--font-size-medium);
+  width: 45%;
+  border: 1px solid var(--color-text-light);
+  border-radius: var(--border-radius);
+  background-color: var(--color-background-light);
+  color: var(--color-text-dark);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden;    /* Hide overflowed text */
+  text-overflow: ellipsis; /* Show ellipsis if text overflows */
+}
+
+.teamNameInput:focus {
+  outline: none;
+  border-color: var(--color-primary); /* Optional: Add focus border color */
+}
+
+.teamNameInput.dark {
+  background-color: var(--color-background-dark);
+  color: var(--color-text-light);
+  border: 1px solid var(--color-text-light); /* Adjust border for dark mode */
+}

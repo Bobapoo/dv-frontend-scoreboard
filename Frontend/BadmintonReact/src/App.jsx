@@ -1,6 +1,7 @@
 // src/App.jsx
 import React from 'react';
-import ScoreDisplay from './components/ScoreDisplay';
+import ScoreDisplay from './components/scoreboard';
+import './styles/theme.css';
 
 const App = () => {
 //   return (
