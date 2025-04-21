@@ -19,16 +19,7 @@ Some of the challenges
    - Game point at 21 with no deuces
 
 Ideas to start
-1. Pick the technologies - increase difficulty by using unfamilliar tech stack
-2. Lets make sure the code can count the score correctly
-3. Work on the controller
-4. Then slowly replace the controller with screen capture abilities
-5. Cover case by case on court
-6. Implement unit and integration testing
-7. Use it / QA testing?!?!
-8. Repeat steps 5-7 until production ready
 
-Tech Stack
-Python - tensorflow??
-postgresql
-nodejs
+1. Start with Frontend React Application
+2. Make Frontend, backend, and ai application.
+
