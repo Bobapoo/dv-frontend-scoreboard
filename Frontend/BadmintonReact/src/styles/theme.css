@@ -1,0 +1,89 @@
+:root {
+    --color-background-light: #FAF9E8;
+    --color-background-dark: #1E1E1E;
+    --color-text-light: #FFFFFF;
+    --color-text-dark: #1E1E1E;
+    --color-primary: #468B97;
+    --color-secondary: #F4C430; /* Gold for trophy */
+    --color-accent: #E76F51;
+    --color-card-light: #E0E0E0;
+    --color-card-dark: #2A2A2A;
+    --color-score-light: #FFF;
+    --color-score-dark: #333;
+
+  /* New Colors */
+  --color-neutral-light: #F5F5F5;
+  --color-neutral-dark: #333333;
+  --color-highlight: #00B8D9; /* Bright teal */
+  --color-muted: #9D9DFF; /* Soft muted blue */
+  --color-warning: #FFB84C; /* Soft amber for warnings */
+  --color-info: #A5C6E8; /* Soft light blue for informational elements */
+  --color-success: #28A745; /* Green for success */
+  --color-danger: #DC3545; /* Red for danger/reset */
+  --color-hover-light: #B1D8E7; /* Light blue hover effect */
+  --color-hover-dark: #1F1F1F; /* Dark hover effect in dark mode */
+
+    /* Additional Colors */
+    --color-info: #17A2B8;  /* Info buttons or highlights */
+    --color-highlight: #FF5733;  /* For important info or highlighting */
+    --color-light-gray: #D3D3D3;  /* Light gray for borders or backgrounds */
+    --color-dark-gray: #555555;  /* Darker gray for text or elements */
+    --color-border: #CCCCCC; /* Light border color */
+    --color-border-dark: #444444; /* Darker border color */
+    --color-shadow-light: rgba(0, 0, 0, 0.1);  /* Light shadow for depth */
+    --color-shadow-dark: rgba(0, 0, 0, 0.25);  /* Dark shadow for depth */
+    --color-soft-cream: #F1EFE6; /* Soft cream */
+    --color-dusty-rose: #C89B9B; /* Dusty Rose */
+    --color-olive-green: #6B8E23; /* Olive Green */
+    --color-warm-taupe: #D0B29C; /* Warm Taupe */
+    --color-charcoal-gray: #36454F; /* Charcoal Gray */
+    --color-purple: #6A4C9C; /* Deep Purple */
+    --color-light-blue-indigo: #5C6BC0; /* Soft Light Blue/Indigo mix */
+    
+    /* Font Size Tokens */
+    --font-size-small: 1rem;
+    --font-size-medium: 1.2rem;
+    --font-size-large: 2.5rem;
+    
+    /* Spacing Tokens */
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+    
+    /* Border Radius Tokens */
+    --border-radius: 12px;
+
+    /* Title Position */
+    --title-top: 5%;
+    --title-left: 2%;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+    --color-background-light: #2a2a2a;
+    --color-background-dark: #1c1c1c;
+    --color-text-light: #f4f4f4;
+    --color-text-dark: #444444;
+    
+    /* New Dark Mode Colors */
+    --color-glow-green: #4D8B31;  /* More muted, softer green */
+    --color-muted-orange: #D77B2D; /* Muted Orange for a soft accent */
+
+    /* Adjustments for dark mode */
+    --color-card-light: #333333;
+    --color-card-dark: #1A1A1A;
+    --color-border: #666666;
+    --color-border-dark: #888888;
+    /* Dark Mode Specific Colors */
+    --color-glow-green: #39FF14; /* Slightly less vibrant for better contrast */
+    --color-muted-orange: #FF8C42; /* Muted Orange for better visibility */
+}
+
+/* General Layout and Container Styles */
+body {
+    background-color: var(--color-background-light);
+    color: var(--color-text-dark);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}

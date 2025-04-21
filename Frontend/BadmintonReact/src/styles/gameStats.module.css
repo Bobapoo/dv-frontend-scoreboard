@@ -1,0 +1,71 @@
+/* Default Light Mode */
+.gameStatsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: var(--spacing-medium) auto;
+    padding: var(--spacing-medium);
+    border-radius: var(--border-radius);
+    background-color: var(--stat-bg-light);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+}
+
+.gameStatsTitle {
+    font-size: var(--font-size-large);
+    font-weight: bold;
+    color: var(--text-color-light);
+    margin-bottom: var(--spacing-medium);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    border-bottom: 2px solid var(--accent-color-light);
+    padding-bottom: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.gameStats {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: var(--spacing-small);
+}
+
+.gameStat {
+    font-size: var(--font-size-medium);
+    font-weight: bold;
+    color: var(--accent-color-light);
+    text-align: center;
+    padding: var(--spacing-small);
+    border-radius: var(--border-radius);
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: var(--spacing-small) 0;
+}
+
+.gameStats h2 {
+    font-size: var(--font-size-large);
+    font-weight: bold;
+    margin-bottom: var(--spacing-small);
+}
+
+.gameStats p {
+    font-size: var(--font-size-medium);
+    margin: var(--spacing-small) 0;
+}
+
+/* Dark Mode */
+[data-theme="dark"] .gameStatsContainer  {
+    background-color: var(--stat-bg-dark);
+}
+[data-theme="dark"] .gameStatsTitle  {
+    color: var(--text-color-dark);
+    border-bottom: 2px solid var(--accent-color-dark);
+}
+
+[data-theme="dark"] .gameStat {
+    color: var(--accent-color-dark);
+    background-color: rgba(255, 255, 255, 0.1);
+}

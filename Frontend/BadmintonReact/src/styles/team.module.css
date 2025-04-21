@@ -1,0 +1,117 @@
+.teamContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacingMedium);
+    border-radius: var(--borderRadius);
+    text-align: center;
+    margin: var(--spacingSmall);
+    min-width: 150px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Team 1 Styling */
+.team1 {
+    background-color: var(--colorPrimary);
+    color: var(--colorTextLight);
+}
+
+/* Team 2 Styling */
+.team2 {
+    background-color: var(--colorSecondary);
+    color: var(--colorTextDark);
+}
+
+/* Team Name Styling */
+.teamName {
+    font-size: var(--fontSizeMedium);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    width: 30%;
+    min-width: 120px;
+    max-width: 200px;
+}
+
+/* Team Score Styling */
+.teamScore {
+    font-size: var(--fontSizeLarge);
+    font-weight: bold;
+    margin-top: var(--spacingSmall);
+}
+
+/* Buttons */
+.teamButton {
+    padding: var(--spacingSmall) var(--spacingMedium);
+    border-radius: var(--borderRadius);
+    background-color: var(--colorAccent);
+    color: var(--colorTextLight);
+    border: none;
+    margin-top: var(--spacingSmall);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Hover Effect for Buttons */
+.teamButton:hover {
+    background-color: var(--colorPrimary);
+    color: var(--colorTextLight);
+}
+
+/* Dark Mode Adjustments */
+[data-theme="dark"] .teamContainer {
+    background-color: var(--colorBackgroundDark);
+    color: var(--colorTextLight);
+}
+
+[data-theme="dark"] .teamButton {
+    background-color: var(--colorAccent);
+    color: var(--colorTextDark);
+}
+
+[data-theme="dark"] .teamButton:hover {
+    background-color: var(--colorSecondary);
+    color: var(--colorTextLight);
+}
+
+/* Icon Buttons */
+.increaseButton, .decreaseButton {
+    font-size: 1.5rem;  /* Adjust icon size */
+    padding: var(--spacing-small) var(--spacing-medium);
+    border-radius: var(--border-radius);
+    background-color: var(--color-accent);
+    color: var(--color-text-dark);
+    border: none;
+    margin-top: var(--spacing-small);
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.increaseButton:hover, .decreaseButton:hover {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+}
+
+/* Dark Mode for Icon Buttons */
+[data-theme="dark"] .increaseButton,
+[data-theme="dark"] .decreaseButton {
+    background-color: var(--color-accent);
+    color: var(--color-text-dark);
+}
+
+[data-theme="dark"] .increaseButton:hover,
+[data-theme="dark"] .decreaseButton:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-text-light);
+}
+
+.streak {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: var(--spacing-small);
+    color: var(--color-accent); /* Color for streak, adjust as necessary */
+}
